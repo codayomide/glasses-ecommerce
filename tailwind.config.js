@@ -12,6 +12,12 @@ module.exports = {
         'offWhite': '#fffdf5',
         'lightBrown': '#ede7da',
         'darkBlue': '#041e42'
+      },
+      screens: {
+        'mo-xs': '0px',
+        'mo-sm': '350px',
+        'mo-md': '475px',
+        'mo-lg': '576px'
       }
     },
   },
