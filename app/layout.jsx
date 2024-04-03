@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="w-full min-h-full">
-        <header>
+        <header className="h-screen flex flex-col">
           <TopMsg />
           <Nav />
         </header>

@@ -3,3 +3,27 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.navIcons-container {
+  @apply flex;
+}
+
+.navIcons-container svg {
+  @apply ml-1;
+}
+
+.dropdown-btn {
+  @apply flex items-center border-b-[1px] py-5 w-full;
+}
+
+.nav-dropdown {
+  @apply flex-col ml-3 mb-3;
+}
+
+.nav-dropdown > a {
+  @apply py-4;
+}
