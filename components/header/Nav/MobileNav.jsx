@@ -59,7 +59,7 @@ const MobileNav = () => {
           <div className={`nav-dropdown ${sunglassesOpen ? "flex" : "hidden"}`}>
             <Link href="/">{`Men's`}</Link>
             <Link href="/">{`Women's`}</Link>
-            <Link href="/">{`Materials`}</Link>
+            <Link href="/">All Sunglasses</Link>
           </div>
         </div>
 
@@ -75,7 +75,7 @@ const MobileNav = () => {
           >
             <Link href="/">{`Men's`}</Link>
             <Link href="/">{`Women's`}</Link>
-            <Link href="/">{`Materials`}</Link>
+            <Link href="/">All Eyeglasses</Link>
           </div>
         </div>
 
