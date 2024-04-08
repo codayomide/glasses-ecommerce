@@ -6,10 +6,10 @@ import { PiCaretDownBold } from "react-icons/pi";
 
 const DesktopNav = () => {
   return (
-    <nav className="hidden md:flex">
-      <h1>DICK MOBY</h1>
+    <nav className="bg-offWhite hidden md:flex w-full justify-between py-4 px-12">
+      <h1 className="font-bold text-2xl">DICK MOBY</h1>
 
-      <div>
+      <div className="flex">
         <Link href={`/`}>Mission</Link>
 
         <div>
@@ -17,7 +17,7 @@ const DesktopNav = () => {
             Sunglasses <PiCaretDownBold />
           </button>
 
-          <div>
+          <div className="hidden">
             <Link href="/">{`Men's`}</Link>
             <Link href="/">{`Women's`}</Link>
             <Link href="/">All Sunglasses</Link>
@@ -29,7 +29,7 @@ const DesktopNav = () => {
             Eyeglasses <PiCaretDownBold />
           </button>
 
-          <div>
+          <div className="hidden">
             <Link href="/">{`Men's`}</Link>
             <Link href="/">{`Women's`}</Link>
             <Link href="/">All Eyeglasses</Link>
@@ -38,7 +38,7 @@ const DesktopNav = () => {
 
         <Link href={`/`}>Stockists</Link>
       </div>
-      
+
       <div className="navIcons-container">
           <Link href="/">Contact</Link>
           <Link href="/">
