@@ -28,3 +28,6 @@
   @apply py-4;
 }
 
+.nav-links-desk > * {
+  @apply mr-12 text-lg;
+}

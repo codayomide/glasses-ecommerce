@@ -9,11 +9,11 @@ const DesktopNav = () => {
     <nav className="bg-offWhite hidden md:flex w-full justify-between py-4 px-12">
       <h1 className="font-bold text-2xl">DICK MOBY</h1>
 
-      <div className="flex">
+      <div className="flex nav-links-desk">
         <Link href={`/`}>Mission</Link>
 
         <div>
-          <button>
+          <button className="flex items-center">
             Sunglasses <PiCaretDownBold />
           </button>
 
@@ -25,7 +25,7 @@ const DesktopNav = () => {
         </div>
 
         <div>
-          <button>
+          <button className="flex items-center">
             Eyeglasses <PiCaretDownBold />
           </button>
 
