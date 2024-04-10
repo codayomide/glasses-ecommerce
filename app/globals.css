@@ -9,11 +9,11 @@
 }
 
 .navIcons-container {
-  @apply flex;
+  @apply flex items-center;
 }
 
 .navIcons-container svg {
-  @apply ml-1;
+  @apply ml-1 md:text-xl md:ml-5;
 }
 
 .dropdown-btn {
@@ -21,11 +21,11 @@
 }
 
 .nav-dropdown {
-  @apply flex-col ml-3 mb-3;
+  @apply flex-col ml-3 mb-3 md:ml-0 md:mb-0;
 }
 
 .nav-dropdown > a {
-  @apply py-4;
+  @apply py-[0.7rem] hover:underline;
 }
 
 .nav-links-desk > * {
