@@ -25,7 +25,7 @@ const MobileNav = () => {
   };
 
   return (
-    <nav className="md:hidden flex-grow flex flex-col">
+    <nav className="lg:hidden flex-grow flex flex-col">
       <div className="bg-offWhite flex justify-between items-center text-lg mo-sm:text-2xl px-1 mo-sm:px-4 pt-1 pb-2 mo-sm:pb-4">
         <button onClick={openNav}>
           {navOpen ? <IoMdClose /> : <RxHamburgerMenu />}
