@@ -1,6 +1,6 @@
 import TopMsg from "@/components/header/TopMsg";
 import "./globals.css";
-import NavMenu from "@/components/header/NavMenu";
+import Nav from "@/components/header/Nav/Nav";
 import Footer from "@/components/Footer";
 
 export const metadata = {
@@ -12,9 +12,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="w-full min-h-full">
-        <header>
+        <header className="h-screen flex flex-col">
           <TopMsg />
-          <NavMenu />
+          <Nav />
         </header>
 
         <main>{children}</main>
