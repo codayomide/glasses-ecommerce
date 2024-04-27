@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const BestSellersSection = () => {
   return (
@@ -26,6 +27,8 @@ const BestSellersSection = () => {
           <h3>£333</h3>
         </div>
       </div>
+
+      <Link href={`/`}>Shop all sunglasses</Link>
     </section>
   );
 };
