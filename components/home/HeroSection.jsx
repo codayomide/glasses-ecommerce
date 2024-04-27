@@ -9,7 +9,7 @@ const HeroSection = () => {
       <Image
         src={heroImageMobile}
         alt="Guy with Glasses"
-        className="lg:hidden w-full h-screen"
+        className="md:hidden w-full h-screen"
       />
       <Image
         src={heroImageDesktop}
