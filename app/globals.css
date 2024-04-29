@@ -8,6 +8,15 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.hide-scrollbar::-webkit-scrollbar {
+  @apply hidden;
+}
+
+/* Hide scrollbar for Firefox */
+.hide-scrollbar {
+  @apply scroll-m-0;
+}
+
 .navIcons-container {
   @apply flex items-center;
 }
