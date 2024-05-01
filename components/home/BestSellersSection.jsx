@@ -9,7 +9,7 @@ const BestSellersSection = () => {
         Bestsellers
       </h2>
 
-      <div className="grid grid-flow-col gap-8 overflow-x-scroll hide-scrollbar w-full px-4 mo-sm:px-8 lg:px-14 pb-4">
+      <div className="grid grid-flow-col gap-8 overflow-x-scroll hide-scrollbar w-full mb-16 px-4 mo-sm:px-8 lg:px-14 pb-4">
         <Link href={`/`} className="w-[300px] mo-lg:w-[400px] lg:w-[500px]">
           <div className="overflow-hidden">
             <Image
@@ -68,7 +68,7 @@ const BestSellersSection = () => {
 
       </div>
 
-      <Link href={`/`}>Shop all sunglasses</Link>
+      <Link href={`/`} className="text-darkBlue font-medium rounded-full border-[1.5px] mx-4 mo-sm:mx-8 lg:mx-14 py-4 px-8 border-darkBlue">Shop all sunglasses</Link>
     </section>
   );
 };
