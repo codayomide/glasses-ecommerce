@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const MakeDifference = () => {
   return (
-    <section>
+    <section className="bg-green text-darkBlue pt-16 pb-8 px-8">
       <div>
         <h1>How we make a difference?</h1>
         <p>
