@@ -5,9 +5,9 @@ import Image from "next/image";
 
 const MakeDifference = () => {
   return (
-    <section className="bg-green text-darkBlue pt-16 pb-8 px-8">
-      <div>
-        <h1>How we make a difference?</h1>
+    <section className="w-full bg-green text-darkBlue pt-16 pb-8 px-4 mo-sm:px-8 lg:px-14 flex">
+      <div className="w-[45%] mr-20">
+        <h1 className="text-2xl mo-lg:text-3xl font-bold mb-6">How we make a difference?</h1>
         <p>
           We’re on a mission to create a world without waste. Because waste is
           just a waste! Of time, money, resources and especially the
@@ -26,7 +26,7 @@ const MakeDifference = () => {
         <p>Look good for your planet.</p>
       </div>
 
-      <div>
+      <div className="w-[45%]">
         <div>
           <h3>Energy</h3>
           <p>
