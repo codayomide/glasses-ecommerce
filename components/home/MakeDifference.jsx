@@ -7,7 +7,7 @@ const MakeDifference = () => {
   return (
     <section className="w-full bg-green text-darkBlue pt-16 pb-8 px-4 mo-sm:px-8 lg:px-14 flex flex-col">
       <div className="flex flex-col lg:flex-row justify-between">
-        <div className="font-medium mb-8 w-[45%]">
+        <div className="font-medium mb-8 w-full lg:w-[45%]">
           <h1 className="text-2xl mo-lg:text-3xl font-bold mb-6">
             How we make a difference?
           </h1>
@@ -28,9 +28,9 @@ const MakeDifference = () => {
           </p>
           <b className="font-black">Look good for your planet.</b>
         </div>
-        <div className="w-[47%]">
-          <div className="mb-8 lg:flex lg:flex-row-reverse justify-between">
-            <div className="w-[65%]">
+        <div className="w-full lg:w-[47%]">
+          <div className="mb-4 lg:flex lg:flex-row-reverse justify-between">
+            <div className="w-full lg:w-[65%]">
               <h3 className="font-bold mb-4">Energy</h3>
               <p className="mb-8">
                 We save 924kwh of energy per 1000 frames produced, which is the
@@ -40,7 +40,7 @@ const MakeDifference = () => {
             <Image src={ElectricityImg} alt="Electricity Consumption Image" />
           </div>
           <div className="mb-8 lg:flex lg:flex-row justify-between">
-            <div className="w-[65%]">
+            <div className="w-full lg:w-[65%]">
               <h3 className="font-bold mb-4">
                 CO<sub>2</sub>
               </h3>
@@ -55,8 +55,8 @@ const MakeDifference = () => {
               className="w-[140px]"
             />
           </div>
-          <div className="flex flex-row-reverse justify-between">
-            <div className="w-[65%]">
+          <div className="lg:flex lg:flex-row-reverse lg:justify-between">
+            <div className="w-full lg:w-[65%]">
               <h3 className="font-bold mb-4">Water</h3>
               <p className="mb-8">
                 We save 5000 liter of water per 1000 frames produced, which is
@@ -68,8 +68,8 @@ const MakeDifference = () => {
         </div>
       </div>
 
-      <div>
-        <button className="">Our Story</button>
+      <div className="mt-16 lg:mt-0">
+        <button className="bg-darkBlue text-white rounded-full px-14 py-4">Our Story</button>
       </div>
     </section>
   );
