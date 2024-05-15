@@ -3,16 +3,16 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-darkBlue text-white">
-      <div>
-        <div>
+    <footer className="bg-darkBlue text-white pt-14">
+      <div className="flex mb-16 px-4 mo-sm:px-8 md:px-14">
+        <div className="footer-links">
           <Link href={`/`}>Mission</Link>
           <Link href={`/`}>Sunglasses</Link>
           <Link href={`/`}>Eyeglasses</Link>
           <Link href={`/`}>Find store</Link>
         </div>
 
-        <div>
+        <div className="footer-links">
           <Link href={`/`}>FAQ</Link>
           <Link href={`/`}>Retailer login</Link>
           <Link href={`/`}>Jobs</Link>
@@ -20,14 +20,14 @@ const Footer = () => {
         </div>
       </div>
 
-      <div>
+      <div className="border-t-2 px-4 mo-sm:px-8 md:px-14 flex flex-col">
         <h1>Subscribe to our mailing list</h1>
-        <form>
+        <form className="flex justify-between">
           <input type="text" />
           <button>Subscribe</button>
         </form>
-        <div>
-          <h1>Follow us</h1>
+        <div className="w-fit self-center">
+          <h1 className="text-center">Follow us</h1>
           {/* Add Social Media Icons */}
         </div>
       </div>
