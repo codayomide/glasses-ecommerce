@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import fbIcon from "@/images/icons/facebook-brands.svg"
+import twitterIcon from "@/images/icons/twitter-brands.svg"
 
 const Footer = () => {
   return (
@@ -27,18 +29,12 @@ const Footer = () => {
           <button className="rounded-full border-2 border-white px-6 py-3">Subscribe</button>
         </form>
         <div className="w-fit self-center mt-6">
-          <h1 className="text-center text-xl">Follow us</h1>
-          {/* Add Social Media Icons */}
+          <h1 className="text-center text-xl mb-4">Follow us</h1>
+          <div className="flex">
+            <Image src={fbIcon} alt="Facebook Icon" width={50} height={50} className="mr-6 w-[30px]" />
+            <Image src={twitterIcon} alt="X Icon" width={50} height={50} className="w-[30px]"/>
+          </div>
         </div>
-      </div>
-
-      <div>
-        <p>
-          Dick Moby, Herengracht 493, 1017 BT, Amsterdam The Netherlands, Planet
-          Earth.
-        </p>
-        <div>1234567890</div>
-        <Link href={`/`}>glasses@glasses.com</Link>
       </div>
     </footer>
   );
