@@ -69,7 +69,7 @@ const MakeDifference = () => {
       </div>
 
       <div className="mt-16 lg:mt-0">
-        <button className="bg-darkBlue text-white rounded-full px-14 py-4">Our Story</button>
+        <button className="bg-darkBlue text-white hover:bg-white hover:text-darkBlue font-medium border-[1.5px] border-darkBlue rounded-full px-14 py-4 transition-all duration-500">Our Story</button>
       </div>
     </section>
   );
