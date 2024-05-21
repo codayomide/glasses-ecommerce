@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <div className="h-[calc(100vh-9.5rem)] overflow-hidden relative">
+    <section className="h-[calc(100vh-9.5rem)] overflow-hidden relative">
       <Image
         src={heroImageMobile}
         alt="Guy with Glasses"
@@ -25,7 +25,7 @@ const HeroSection = () => {
         
         <Link href={`/`} className="text-white bg-green hover:bg-white hover:text-green text-xl font-medium mt-20 mo-sm:mt-12 px-9 mo-sm:px-14 py-6 mo-sm:py-7 rounded-full transition-all duration-500">Shop Sunglasses</Link>
       </div>
-    </div>
+    </section>
   );
 };
 

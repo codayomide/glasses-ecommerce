@@ -11,7 +11,8 @@ module.exports = {
         'green': '#00B495',
         'offWhite': '#fffdf5',
         'lightBrown': '#ede7da',
-        'darkBlue': '#041e42'
+        'darkBlue': '#041e42',
+        'lightBrown': '#ede7da'
       },
       screens: {
         'mo-xs': '0px',
