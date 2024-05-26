@@ -5,6 +5,7 @@ import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { IoSearchOutline } from "react-icons/io5";
 import { PiCaretDownBold } from "react-icons/pi";
 import DropdownLink from "./DropdownLink";
+import SunglassesContent from "./DropdownContent";
 
 const DesktopNav = () => {
   return (
@@ -14,7 +15,7 @@ const DesktopNav = () => {
       <div className="flex nav-links-desk">
         <Link href={`/`}>Mission</Link>
 
-        <DropdownLink href={`/`} DropdownContent>Sunglasses</DropdownLink>
+        <DropdownLink href={`/`} DropdownContent={SunglassesContent}>Sunglasses</DropdownLink>
 
         <div className="relative">
           <button className="flex items-center">

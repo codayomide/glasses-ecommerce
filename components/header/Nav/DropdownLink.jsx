@@ -7,8 +7,12 @@ const DropdownLink = ({ children, href, DropdownContent }) => {
   const showDropdown = open && DropdownContent;
 
   return (
-    <div onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
-      <Link href={href} className="flex items-center">
+    <div
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={() => setOpen(false)}
+      className="relative"
+    >
+      <Link href={href} className="flex items-center relative">
         {children}
         <PiCaretDownBold
           style={{
@@ -17,6 +21,7 @@ const DropdownLink = ({ children, href, DropdownContent }) => {
           className="ml-2 transition-transform duration-300 ease-out"
         />
       </Link>
+      {showDropdown && <DropdownContent />}
     </div>
   );
 };
