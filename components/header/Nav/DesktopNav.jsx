@@ -6,6 +6,7 @@ import { IoSearchOutline } from "react-icons/io5";
 import { PiCaretDownBold } from "react-icons/pi";
 import DropdownLink from "./DropdownLink";
 import SunglassesContent from "./DropdownContent";
+import DropdownLinks from "./DropdownContent";
 
 const DesktopNav = () => {
   return (
@@ -15,7 +16,7 @@ const DesktopNav = () => {
       <div className="flex nav-links-desk">
         <Link href={`/`}>Mission</Link>
 
-        <DropdownLink href={`/`} DropdownContent={SunglassesContent}>Sunglasses</DropdownLink>
+        <DropdownLink href={`/`} DropdownContent={DropdownLinks}>Sunglasses</DropdownLink>
 
         <div className="relative">
           <button className="flex items-center">
