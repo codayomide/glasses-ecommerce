@@ -27,7 +27,7 @@ const Footer = () => {
           <h1 className="text-xl font-medium mb-4">Subscribe to our mailing list</h1>
           <form className="flex justify-between">
             <input type="text" placeholder="Your email address" className="p-3 text-black mr-8" />
-            <button className="rounded-full border-2 border-white px-6 py-3">Subscribe</button>
+            <button className="rounded-full border-2 border-white hover:text-darkBlue hover:bg-white transition-all duration-500 px-6 py-3">Subscribe</button>
           </form>
         </div>
         <div className="w-fit self-center mt-6 lg:mt-0 lg:self-start">
