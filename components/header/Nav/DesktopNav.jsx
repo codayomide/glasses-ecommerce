@@ -28,8 +28,6 @@ const DesktopNav = () => {
           Eyeglasses
         </DropdownLink>
 
-        
-
         <Link href={`/`}>Stockists</Link>
       </div>
 
