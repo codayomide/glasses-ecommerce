@@ -1,28 +1,35 @@
 import Link from "next/link";
-import { useEffect, useState } from "react";
 import { GoHeart } from "react-icons/go";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { IoSearchOutline } from "react-icons/io5";
 import { PiCaretDownBold } from "react-icons/pi";
 import DropdownLink from "./DropdownLink";
-import SunglassesContent from "./DropdownContent";
-import DropdownLinks from "./DropdownContent";
+import SunglassesContent from "./SunglassesContent";
+import EyeglassesContent from "./EyeglassesContent";
 
 const DesktopNav = () => {
   return (
     <nav className="bg-offWhite hidden lg:flex w-full justify-between py-4 px-12">
-      <h1 className="font-bold text-2xl">GLASSES</h1> 
+      <h1 className="font-bold text-2xl">GLASSES</h1>
 
       <div className="flex nav-links-desk">
         <Link href={`/`}>Mission</Link>
 
-        <DropdownLink href={`/`} DropdownContent={DropdownLinks}>Sunglasses</DropdownLink>
+        <DropdownLink
+          href="/"
+          DropdownContent={SunglassesContent}
+        >
+          Sunglasses
+        </DropdownLink>
+        
+        <DropdownLink
+          href="/"
+          DropdownContent={EyeglassesContent}
+        >
+          Eyeglasses
+        </DropdownLink>
 
-        <div className="relative">
-          <button className="flex items-center">
-            Eyeglasses <PiCaretDownBold className="ml-1" />
-          </button>
-        </div>
+        
 
         <Link href={`/`}>Stockists</Link>
       </div>
@@ -42,7 +49,6 @@ const DesktopNav = () => {
     </nav>
   );
 };
-
 
 // const DesktopNav = () => {
 //   const [sunglassesIsOpen, setSunglassesIsOpen] = useState(false);
@@ -73,7 +79,7 @@ const DesktopNav = () => {
 
 //   return (
 //     <nav className="bg-offWhite hidden lg:flex w-full justify-between py-4 px-12">
-//       <h1 className="font-bold text-2xl">GLASSES</h1> 
+//       <h1 className="font-bold text-2xl">GLASSES</h1>
 
 //       <div className="flex nav-links-desk">
 //         <Link href={`/`}>Mission</Link>
