@@ -12,7 +12,7 @@ const DropdownLink = ({ children, href, DropdownContent }) => {
       onMouseLeave={() => setOpen(false)}
       className="relative"
     >
-      <Link href={href} className="flex items-center relative">
+      <Link href={href} className="flex items-center relative py-4">
         {children}
         <PiCaretDownBold
           style={{
