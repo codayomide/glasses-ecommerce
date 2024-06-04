@@ -32,7 +32,13 @@ const MobileNav = () => {
           className="relative cursor-pointer h-5 w-7 transition-all duration-500 ease-in-out"
         >
           {/* Turn this into a reusable component later */}
-          <span className={`absolute right-0 top-2 w-7 h-[3px] bg-darkBlue transition-all duration-500 ease-in-out before:content-normal before:absolute before:top-[-8px] before:w-7 before:h-[3px] before:bg-darkBlue before:transition-all before:duration-500 before:ease-in-out after:content-normal after:absolute after:top-[8px] after:w-5 after:h-[3px] after:bg-darkBlue after:transition-all after:duration-500 after:ease-in-out ${navOpen ? "rotate-[720deg] bg-transparent before:rotate-45 after:-rotate-45 after:translate-x-[3px] after:translate-y-[-7px]" : ""}`}></span>
+          <span
+            className={`absolute right-0 top-2 w-7 h-[3px] transition-all duration-500 ease-in-out before:content-normal before:absolute before:top-[-8px] before:w-7 before:h-[3px] before:bg-darkBlue before:transition-all before:duration-500 before:ease-in-out after:content-normal after:absolute after:top-[8px] after:h-[3px] after:bg-darkBlue after:transition-all after:duration-500 after:ease-in-out ${
+              navOpen
+                ? "rotate-[720deg] bg-transparent before:rotate-45 before:translate-x-[5px] before:translate-y-[8px] after:w-7 after:-rotate-45 after:translate-x-[5px] after:translate-y-[-8px]"
+                : "rotate-0 bg-darkBlue before:rotate-0 before:translate-x-0 before:translate-y-0 after:w-5 after:rotate-0 after:translate-x-0 after:translate-y-0"
+            }`}
+          ></span>
           {/* {navOpen ? <IoMdClose /> : <RxHamburgerMenu />} */}
         </div>
 
