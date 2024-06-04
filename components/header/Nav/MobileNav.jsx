@@ -27,9 +27,13 @@ const MobileNav = () => {
   return (
     <nav className="lg:hidden flex-grow flex flex-col">
       <div className="bg-offWhite flex justify-between items-center text-lg mo-sm:text-2xl px-1 mo-sm:px-4 pt-1 pb-2 mo-sm:pb-4">
-        <button onClick={openNav}>
-          {navOpen ? <IoMdClose /> : <RxHamburgerMenu />}
-        </button>
+        <div
+          onClick={openNav}
+          className="relative cursor-pointer h-5 w-7 transition-all duration-500 ease-in-out"
+        >
+          <span className={`absolute right-0 top-2 w-7 h-[3px] bg-darkBlue transition-all duration-500 ease-in-out before:content-normal before:absolute before:top-[-8px] before:w-7 before:h-[3px] before:bg-darkBlue before:transition-all before:duration-500 before:ease-in-out after:content-normal after:absolute after:top-[8px] after:w-5 after:h-[3px] after:bg-darkBlue after:transition-all after:duration-500 after:ease-in-out ${navOpen ? "rotate-[720deg] bg-transparent before:rotate-45 after:-rotate-45 after:translate-x-[3px] after:translate-y-[-7px]" : ""}`}></span>
+          {/* {navOpen ? <IoMdClose /> : <RxHamburgerMenu />} */}
+        </div>
 
         <h1 className="font-bold self-center">DICK MOBY</h1>
 
@@ -46,7 +50,11 @@ const MobileNav = () => {
         </div>
       </div>
 
-      <div className={`bg-offWhite text-md h-full flex-grow flex-col px-8 pt-8 ${navOpen ? "flex" : "hidden"}`}>
+      <div
+        className={`bg-offWhite text-md h-full flex-grow flex-col px-8 pt-8 ${
+          navOpen ? "flex" : "hidden"
+        }`}
+      >
         <Link href="/" className="border-b-[1px] py-5">
           Mission
         </Link>
