@@ -2,9 +2,7 @@ import Link from "next/link";
 import { IoSearchOutline } from "react-icons/io5";
 import { GoHeart } from "react-icons/go";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
-import { RxHamburgerMenu } from "react-icons/rx";
 import { PiCaretRightBold } from "react-icons/pi";
-import { IoMdClose } from "react-icons/io";
 import { useState } from "react";
 
 const MobileNav = () => {
@@ -25,7 +23,7 @@ const MobileNav = () => {
   };
 
   return (
-    <nav className="lg:hidden flex-grow flex flex-col">
+    <nav className="lg:hidden flex-grow flex flex-col relative">
       <div className="bg-offWhite flex justify-between items-center text-lg mo-sm:text-2xl px-1 mo-sm:px-4 pt-1 pb-2 mo-sm:pb-4">
         <div
           onClick={openNav}
@@ -39,7 +37,6 @@ const MobileNav = () => {
                 : "rotate-0 bg-darkBlue before:rotate-0 before:translate-x-0 before:translate-y-0 after:w-5 after:rotate-0 after:translate-x-0 after:translate-y-0"
             }`}
           ></span>
-          {/* {navOpen ? <IoMdClose /> : <RxHamburgerMenu />} */}
         </div>
 
         <h1 className="font-bold self-center">DICK MOBY</h1>
@@ -58,7 +55,7 @@ const MobileNav = () => {
       </div>
 
       <div
-        className={`bg-offWhite text-md h-full flex-grow flex-col px-8 pt-8 ${
+        className={`absolute right-0 left-0 z-10 bg-offWhite text-md h-full flex-grow flex-col px-8 pt-8 ${
           navOpen ? "flex" : "hidden"
         }`}
       >
