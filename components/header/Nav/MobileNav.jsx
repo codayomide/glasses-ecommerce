@@ -55,7 +55,7 @@ const MobileNav = () => {
       </div>
 
       <div
-        className={`absolute right-0 left-0 z-10 bg-offWhite text-md h-full flex-grow flex-col px-8 pt-8 ${
+        className={`absolute z-50 top-[99%] h-[90vh] w-full bg-offWhite text-md flex-grow flex-col px-8 pt-8 ${
           navOpen ? "flex" : "hidden"
         }`}
       >
