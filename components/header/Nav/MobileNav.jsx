@@ -55,8 +55,8 @@ const MobileNav = () => {
       </div>
 
       <div
-        className={`absolute z-50 top-[99%] h-[90vh] w-full bg-offWhite text-md flex-grow flex-col px-8 pt-8 ${
-          navOpen ? "flex" : "hidden"
+        className={`absolute z-50 top-[99%] h-[90vh] w-full bg-offWhite text-md flex-grow flex-col px-8 pt-8 transition-all ease-in duration-500 flex ${
+          navOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
         <Link href="/" className="border-b-[1px] py-5">
