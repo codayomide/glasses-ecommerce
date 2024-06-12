@@ -4,6 +4,8 @@ import { GoHeart } from "react-icons/go";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { PiCaretRightBold } from "react-icons/pi";
 import { useState } from "react";
+import MobDropdownLink from "./MobDropdownLink";
+import { MobSunglassesContent } from "./DropdownContent";
 
 const MobileNav = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -63,17 +65,7 @@ const MobileNav = () => {
           Mission
         </Link>
 
-        <div>
-          <button className="dropdown-btn" onClick={openSunglasses}>
-            Sunglasses <PiCaretRightBold className="ml-5" />
-          </button>
-
-          <div className={`nav-dropdown ${sunglassesOpen ? "flex" : "hidden"}`}>
-            <Link href="/">{`Men's`}</Link>
-            <Link href="/">{`Women's`}</Link>
-            <Link href="/">All Sunglasses</Link>
-          </div>
-        </div>
+        <MobDropdownLink href="/" DropdownContent={MobSunglassesContent}>Sunglasses</MobDropdownLink>
 
         <div>
           <button className="dropdown-btn" onClick={openEyeglasses}>

@@ -11,13 +11,13 @@ const MobDropdownLink = ({ children, href, DropdownContent }) => {
       onClick={() => open ? setOpen(false) : setOpen(true)}
       className="relative"
     >
-      <Link href={href} className="flex items-center relative py-4">
+      <Link href={href} className="flex items-center border-b-[1px] py-5 w-full">
         {children}
         <PiCaretRightBold
           style={{
             transform: showDropdown ? "rotate(90deg)" : "rotate(0deg)",
           }}
-          className="ml-2 transition-transform duration-300 ease-out"
+          className="ml-2 transition-transform duration-500 ease-out"
         />
       </Link>
       {showDropdown && <DropdownContent />}

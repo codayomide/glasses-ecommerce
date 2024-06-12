@@ -3,8 +3,7 @@ import { GoHeart } from "react-icons/go";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { IoSearchOutline } from "react-icons/io5";
 import DropdownLink from "./DropdownLink";
-import SunglassesContent from "./SunglassesContent";
-import EyeglassesContent from "./EyeglassesContent";
+import { DeskEyeglassesContent, DeskSunglassesContent } from "./DropdownContent";
 
 const DesktopNav = () => {
   return (
@@ -16,14 +15,14 @@ const DesktopNav = () => {
 
         <DropdownLink
           href="/"
-          DropdownContent={SunglassesContent}
+          DropdownContent={DeskSunglassesContent}
         >
           Sunglasses
         </DropdownLink>
         
         <DropdownLink
           href="/"
-          DropdownContent={EyeglassesContent}
+          DropdownContent={DeskEyeglassesContent}
         >
           Eyeglasses
         </DropdownLink>
