@@ -26,7 +26,7 @@ const DeskSunglassesContent = () => {
 
 const MobSunglassesContent = () => {
   return (
-    <div className={`nav-dropdown flex`}>
+    <div className={`nav-dropdown flex transition-transform duration-500 ease-linear`}>
       <Link href="/">{`Men's`}</Link>
       <Link href="/">{`Women's`}</Link>
       <Link href="/">All Sunglasses</Link>

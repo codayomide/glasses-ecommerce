@@ -1,8 +1,7 @@
-import Link from "next/link";
 import { useState } from "react";
 import { PiCaretRightBold } from "react-icons/pi";
 
-const MobDropdownLink = ({ children, DropdownContent }) => {
+const MobDropdownBtn = ({ children, DropdownContent }) => {
   const [open, setOpen] = useState(false);
   const showDropdown = open && DropdownContent;
 
@@ -25,4 +24,4 @@ const MobDropdownLink = ({ children, DropdownContent }) => {
   );
 };
 
-export default MobDropdownLink;
+export default MobDropdownBtn;

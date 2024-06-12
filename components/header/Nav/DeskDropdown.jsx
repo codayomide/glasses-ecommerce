@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { useState } from "react";
 import { PiCaretDownBold } from "react-icons/pi";
 
