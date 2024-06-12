@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { PiCaretDownBold } from "react-icons/pi";
 
-const DropdownLink = ({ children, href, DropdownContent }) => {
+const DeskDropdown = ({ children, DropdownContent }) => {
   const [open, setOpen] = useState(false);
   const showDropdown = open && DropdownContent;
 
@@ -12,7 +12,7 @@ const DropdownLink = ({ children, href, DropdownContent }) => {
       onMouseLeave={() => setOpen(false)}
       className="relative"
     >
-      <Link href={href} className="flex items-center relative py-4">
+      <button className="flex items-center relative py-4">
         {children}
         <PiCaretDownBold
           style={{
@@ -20,10 +20,10 @@ const DropdownLink = ({ children, href, DropdownContent }) => {
           }}
           className="ml-2 transition-transform duration-300 ease-out"
         />
-      </Link>
+      </button>
       {showDropdown && <DropdownContent />}
     </div>
   );
 };
 
-export default DropdownLink;
+export default DeskDropdown;

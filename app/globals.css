@@ -25,10 +25,6 @@
   @apply ml-1 md:text-xl md:ml-5;
 }
 
-/* .dropdown-btn {
-  @apply flex items-center border-b-[1px] py-5 w-full;
-} */
-
 .nav-dropdown {
   @apply flex-col ml-3 mb-3 md:ml-0 md:mb-0;
 }

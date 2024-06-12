@@ -4,7 +4,7 @@ import { GoHeart } from "react-icons/go";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { PiCaretRightBold } from "react-icons/pi";
 import { useState } from "react";
-import MobDropdownLink from "./MobDropdownLink";
+import MobDropdownLink from "./MobDropdownBtn";
 import { MobSunglassesContent } from "./DropdownContent";
 
 const MobileNav = () => {

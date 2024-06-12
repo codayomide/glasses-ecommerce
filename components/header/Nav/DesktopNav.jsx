@@ -2,7 +2,7 @@ import Link from "next/link";
 import { GoHeart } from "react-icons/go";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { IoSearchOutline } from "react-icons/io5";
-import DropdownLink from "./DropdownLink";
+import DropdownLink from "./DeskDropdown";
 import { DeskEyeglassesContent, DeskSunglassesContent } from "./DropdownContent";
 
 const DesktopNav = () => {
